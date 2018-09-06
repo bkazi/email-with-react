@@ -1,0 +1,36 @@
+{
+  "name": "react-emails",
+  "version": "1.0.0",
+  "description": "Using React for emails? :o",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist --copy-files",
+    "build-dev": "babel -w src --out-dir dist --copy-files",
+    "start": "run-s build micro",
+    "dev-server": "micro-dev",
+    "dev-watch": "run-p build-dev dev-server",
+    "dev": "run-s build dev-watch"
+  },
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "emotion": "^9.2.8",
+    "emotion-server": "^9.2.8",
+    "micro": "^9.3.3",
+    "nodemailer": "^4.6.8",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-emotion": "^9.2.8"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-plugin-emotion": "^9.2.8",
+    "npm-run-all": "^4.1.3",
+    "micro-dev": "^3.0.0"
+  }
+}
